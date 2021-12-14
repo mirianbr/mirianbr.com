@@ -1,0 +1,89 @@
+baseURL = "https://mirianbr.com"
+languageCode = "en-us"
+title = "Mírian Bruckschen Motta Barros's Website"
+theme = "hello-friend-ng"
+paginate = 10
+
+[author]
+  name = "Mírian Bruckschen Motta Barros"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Consulting services on technical documentation, customer service and supporting business processes.  Contact me at hello@mirianbr.com 👋🏼"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "Mírian Bruckschen Motta Barros's Website"
+  keywords = "homepage, blog, technical writing, technical documentation, it consulting, technical writing consulting"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[params.footer]
+    trademark = true
+    rss = true
+    author = true
+
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a> and <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">Hello Friend NG</a> theme"
+    ]
+
+[[params.social]]
+  name = "email"
+  url = "mailto:hello@mirianbr.com"
+[[params.social]]
+  name = "github"
+  url = "https://github.com/mirianbr"
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/mirianbruckschen/"
+[[params.social]]
+  name = "kaggle"
+  url = "https://www.kaggle.com/mirianbarros"
+[[params.social]]
+  name = "itchio"
+  url = "https://mirianbr.itch.io/"
+
+[languages]
+  [languages.en]
+    title = "Mírian Bruckschen Motta Barros's Website"
+    subtitle = "Technical Documentation and Customer Services Consultant"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "homepage"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
+  [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/projects"

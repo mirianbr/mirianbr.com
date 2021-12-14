@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tesseract on Mírian Bruckschen Motta Barros&#39;s Website</title>
+    <link>https://mirianbr.com/tags/tesseract/</link>
+    <description>Recent content in tesseract on Mírian Bruckschen Motta Barros&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mirianbr.com/tags/tesseract/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A pytesseract hello world in Portuguese under Anaconda</title>
+      <link>https://mirianbr.com/posts/2021-07-13-pytesseract_hello_world_in_portuguese_under_anaconda/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mirianbr.com/posts/2021-07-13-pytesseract_hello_world_in_portuguese_under_anaconda/</guid>
+      <description>Playing with OCR using python for the first time, I came across tesseract and its Python wrapper, pytesseract. I started by (and recommend) this detailed tutorial, that covers the tesseract and pytesseract installation, assuming you already have Anaconda.
+Forcing the tessdata-dir to be found Depending on your installation, though, things may not work at first. Mine didn&amp;rsquo;t, for the tessdata-dir wasn&amp;rsquo;t being found (Error opening data file... error). In order to resolve this, I followed pytesseract usage hint to force the tessdata directory:</description>
+    </item>
+    
+  </channel>
+</rss>

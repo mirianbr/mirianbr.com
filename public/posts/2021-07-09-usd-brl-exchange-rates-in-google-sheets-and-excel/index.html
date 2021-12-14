@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="map[name:Mírian Bruckschen Motta Barros]">
+<meta name="description" content="Exploring sheets possibilities for pulling Central Bank of Brazil data for USD-BRL conversion at a given day" />
+<meta name="keywords" content=", finance, brazilian taxes, exchange rates, google sheets, microsoft excel, power query" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mirianbr.com/posts/2021-07-09-usd-brl-exchange-rates-in-google-sheets-and-excel/" />
+
+
+    <title>
+        
+            USD-BRL exchange rates in Google Sheets and Excel :: Mírian Bruckschen Motta Barros&#39;s Website  — Technical Documentation and Customer Services Consultant
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.17863a81d979b637a02cd7632a4d86e9d80563ef460fd6af1a56962efcaa066b.css">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+    <meta name="theme-color" content="">
+
+
+
+<meta itemprop="name" content="USD-BRL exchange rates in Google Sheets and Excel">
+<meta itemprop="description" content="Exploring sheets possibilities for pulling Central Bank of Brazil data for USD-BRL conversion at a given day"><meta itemprop="datePublished" content="2021-07-09T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-09T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1086"><meta itemprop="image" content="https://mirianbr.com"/>
+<meta itemprop="keywords" content="finance,brazilian taxes,exchange rates,google sheets,microsoft excel,power query," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mirianbr.com"/>
+
+<meta name="twitter:title" content="USD-BRL exchange rates in Google Sheets and Excel"/>
+<meta name="twitter:description" content="Exploring sheets possibilities for pulling Central Bank of Brazil data for USD-BRL conversion at a given day"/>
+
+
+
+
+    <meta property="og:title" content="USD-BRL exchange rates in Google Sheets and Excel" />
+<meta property="og:description" content="Exploring sheets possibilities for pulling Central Bank of Brazil data for USD-BRL conversion at a given day" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mirianbr.com/posts/2021-07-09-usd-brl-exchange-rates-in-google-sheets-and-excel/" /><meta property="og:image" content="https://mirianbr.com"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-09T00:00:00+00:00" /><meta property="og:site_name" content="Mírian Bruckschen Motta Barros&#39;s Website" />
+
+
+
+
+
+    <meta property="article:section" content="Tutorials" />
+
+
+
+    <meta property="article:published_time" content="2021-07-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">homepage</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Blog</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mirianbr.com/posts/2021-07-09-usd-brl-exchange-rates-in-google-sheets-and-excel/">USD-BRL exchange rates in Google Sheets and Excel</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>Doing taxes can be a challenge. If you receive money in a foreign currency, being a Brazil resident, income tax it is definitively tricky.</p>
+<p>If you receive money from abroad, you need to do some math each month to learn what is the amount you should consider when calculating your taxes. Regardless of the currency your money is in, you need to convert it first to US dollars, then to Brazilian Reais (BRL), and just then you can do your tax calculation. But the USD-BRL conversion needs to use the exchange rate for (follow me if you can!) the last business day of the first fortnight of the month prior to the payment month.</p>
+<p><img src="https://media.giphy.com/media/WRQBXSCnEFJIuxktnw/giphy.gif" alt="Woman looking confused, math formulas all around her"></p>
+<p>Here I detail my experiments to create a step by step sheet document (using Google sheets and Excel), to not need to think this through every month.</p>
+<p><img src="https://media.giphy.com/media/tBn5FJVUdeMarcl3gQ/giphy.gif" alt="Fun-looking blond girl gesturing a lot, subtitle says &ldquo;getting very excited about numbers and things&rdquo;"></p>
+<h2 id="google-sheets">Google sheets</h2>
+<p>We have 4 logical steps to find the date. Remember the definition: the exchange rate to be used is for &ldquo;the last business day of the first fortnight of the month prior to the payment month&rdquo;. Once we have the payment date (that you need to enter), let&rsquo;s follow the steps below:</p>
+<ol>
+<li>Find the payment month, using a creative <a href="https://support.google.com/docs/answer/3093044">EOMONTH</a> (&ldquo;End of Month&rdquo;)</li>
+<li>Find the month prior to the payment month, also with <code>EOMONTH</code></li>
+<li>Find the first fortnight of the month prior to the payment month (formally an interval of 14 days, but what is meant here is &ldquo;first half of the month&rdquo;), adding 15 days to the date in the previous step</li>
+<li>Find the last business day of the first fortnight of the month prior to the payment month, checking for holidays and then using <a href="https://support.google.com/docs/answer/3092985">WEEKDAY</a> with the second parameter as <code>2</code>, starting weeks with Monday and thus having Saturday and Sunday easy to spot with an <code>IF</code> clause</li>
+</ol>
+<p>Of course all of this can be done in one step only, but it would be harder to follow. Since my purpose here was to keep some clarity (i.e., where do these dates come from?), I chose to show all the steps, despite the last date is the date we need.</p>
+<p><img src="https://media.giphy.com/media/xT5LMRBvRxAHZfQh5m/giphy.gif" alt="Homer Simpson dressed funny saying &ldquo;Hmm I understand&rdquo;. I wonder if he did."></p>
+<p><del>An additional note: I haven&rsquo;t considered holidays, so if the last business day of the first fortnight ends up in a holiday this won&rsquo;t work. One example is the Carnival 2021, that was celebrated in Brazil in the Monday, February 14th and Tuesday, February 15th. The thing is you can set your own manual date here (which would be February 12th), while I think of better ways.</del></p>
+<p><strong>UPDATE</strong> (as of September 20th, 2021): Listed holidays are considered now.</p>
+<p>We have done all this just to find the date. Now we need the exchange rate for it. For income tax purposes in Brazil, we cannot use the beautiful, easy <a href="https://support.google.com/docs/answer/3093281">GOOGLEFINANCE</a> function to get the rates data, for it needs to be the official exchange rate data provided by the Central Bank of Brazil. This exchange rate is not the last exchange rate of any given day, but an average of several exchange rates during that day, extracted from bidding agents in 4 time windows. In <a href="https://www.bcb.gov.br/en/financialstability/quotations">this page</a> there&rsquo;s a footnote describing how this is calculated.</p>
+<p>Therefore we need to use the official sources. Fine. To find the rates, here I used <a href="https://support.google.com/docs/answer/3093335">IMPORTDATA</a> and <a href="https://support.google.com/docs/answer/3093343">QUERY</a> with the CSV provided by the Bank. At the time I created the first version of these documents, I couldn&rsquo;t find any API to retrieve this data (now <a href="https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios/resource/ae69aa94-4194-45a6-8bae-12904af7e176">there is</a>, looking forward to using it shortly!).</p>
+<p><strong>UPDATE</strong> (as of September 20th, 2021): Holidays are considered when listed; I&rsquo;m using <a href="https://support.google.com/docs/answer/3093378?hl=en">MATCH</a> combined with <a href="https://support.google.com/docs/answer/3093349?hl=en">ISERROR</a>, as instructed <a href="https://webapps.stackexchange.com/questions/42340/how-to-check-if-value-is-in-range-of-cells">here</a>.</p>
+<p>Here you can see the <a href="https://docs.google.com/spreadsheets/d/10etG8UfcckcIpKI3-X6ax2fjx2JqA-qLJxRvTGQJcVI/edit#gid=0">resulting Google sheets document</a> (<a href="https://docs.google.com/spreadsheets/d/1Mnl46zcJlEgwFFuqP4HLeLn5cdeQyuv0Ifm0Pq5eBXY/edit#gid=0">pt-BR version</a>).</p>
+<h2 id="microsoft-excel">Microsoft Excel</h2>
+<p>In Excel, the same steps apply - and some of the functions even have the same name!</p>
+<p>Have the payment date entered, and let&rsquo;s follow together the steps to get the date for the exchange rate:</p>
+<ol>
+<li>Find the payment month, using a creative <a href="https://support.microsoft.com/en-us/office/eomonth-function-7314ffa1-2bc9-4005-9d66-f49db127d628">EOMONTH</a></li>
+<li>Find the month prior to the payment month, also with <code>EOMONTH</code></li>
+<li>Find the first fortnight of the month prior to the payment month, only by adding 15 days to the date in the previous step</li>
+<li>Find the last business day of the first fortnight of the month prior to the payment month, using the listed holidays and then the <a href="https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a">WEEKDAY</a> function with the second parameter as <code>2</code>, starting weeks with Monday and thus having Saturday and Sunday easy to spot with an <code>IF</code> clause</li>
+</ol>
+<p><del>In Excel too I haven&rsquo;t considered holidays. Beware of Carnival, November 15th (Republic Day in Brazil) and so many others I may be forgetting.</del></p>
+<p><strong>UPDATE</strong> (as of September 20th, 2021): Listed holidays are now considered using the <a href="https://support.microsoft.com/en-us/office/match-function-e8dffd45-c762-47d6-bf89-533f4a37673a">MATCH</a> + <a href="https://support.microsoft.com/en-us/office/is-functions-0f2d7971-6019-40a0-a171-f2d869135665">ISERROR</a> (not ISERR!) functions. In Portuguese-translated Excel, these functions are called CORRESP (for MATCH) and ÉERROS (for ISERROR).</p>
+<p>The dates above can be used to forge an URL to extract CSV data from, that will look like something this: <a href="https://ptax.bcb.gov.br/ptax_internet/consultaBoletim.do?method=gerarCSVFechamentoMoedaNoPeriodo&amp;ChkMoeda=61&amp;DATAINI=14/04/2021&amp;DATAFIM=15/04/2021">https://ptax.bcb.gov.br/ptax_internet/consultaBoletim.do?method=gerarCSVFechamentoMoedaNoPeriodo&amp;ChkMoeda=61&amp;DATAINI=14/04/2021&amp;DATAFIM=15/04/2021</a>. <code>DATAINI</code> means start date, and <code>DATAFIM</code> end date.</p>
+<p>Now, to import the exchange rates from CSV. Here comes the main difference between Google sheets and Excel. Google sheets provide a very nice <code>IMPORTDATA</code> function that works directly in the sheet, while Excel has no such thing. There&rsquo;s all the data importing, scrapping and processing tools that come together with Power Query, so I had to use the UI a bit.</p>
+<p><img src="https://media.giphy.com/media/l0EtMMARnUBHCzZ3G/giphy.gif" alt="Mr. Krabs agreeing to something. He looks happy."></p>
+<p>I find this the easiest way to create the connection: import the CSV using the <strong>Data</strong> tab in Excel, and then change the connection to be a function. You can process the origin CSV manually to remove all columns except the one for the exchange rate, and have only the last row to be shown, or use the function I have created:</p>
+<pre tabindex="0"><code>= (URL) as table =&gt;
+
+let
+    Source = Csv.Document(Web.Contents(URL),[Delimiter=&quot;;&quot;, Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+    #&quot;Sorted Rows&quot; = Table.Sort(Source,{{&quot;Column1&quot;, Order.Descending}}),
+    #&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Sorted Rows&quot;,{&quot;Column1&quot;, &quot;Column2&quot;, &quot;Column3&quot;, &quot;Column4&quot;, &quot;Column6&quot;, &quot;Column7&quot;, &quot;Column8&quot;}),&gt; 
+    #&quot;Kept First Rows&quot; = Table.FirstN(#&quot;Removed Columns&quot;,1),
+    #&quot;Renamed Columns&quot; = Table.RenameColumns(#&quot;Kept First Rows&quot;,{{&quot;Column5&quot;, &quot;1 USD em BRL&quot;}})
+in
+    #&quot;Changed Type&quot;
+</code></pre><p>There&rsquo;s a <code>URL</code> parameter the function will take into account. You can invoke the function directly, provide the URL and get the rate, or you can create a table and invoke the custom function (as I did).</p>
+<p>Here&rsquo;s the <a href="https://github.com/mirianbr/exchange-rates/blob/main/Exchange_rates-PQ-en-rev2.xlsx">resulting Excel sheet</a> (<a href="https://github.com/mirianbr/exchange-rates/blob/main/Exchange_rates-PQ-ptBR-v2.xlsx">pt-BR version</a>). You can download, use, change and improve it freely.</p>
+<p>I&rsquo;m sure there are so many ways to do this better, and I&rsquo;d love to hear any comments or suggestions you may have - please see <a href="https://mirianbr.github.io/">my contacts</a> and let&rsquo;s chat!</p>
+<p><img src="https://media.giphy.com/media/WhwzCRKKs1yDe/giphy.gif" alt="Cute little kittens using headsets and telephones"></p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mirianbr.com/tags/finance/">finance</a></span>
+        <span class="tag"><a href="https://mirianbr.com/tags/brazilian-taxes/">brazilian taxes</a></span>
+        <span class="tag"><a href="https://mirianbr.com/tags/exchange-rates/">exchange rates</a></span>
+        <span class="tag"><a href="https://mirianbr.com/tags/google-sheets/">google sheets</a></span>
+        <span class="tag"><a href="https://mirianbr.com/tags/microsoft-excel/">microsoft excel</a></span>
+        <span class="tag"><a href="https://mirianbr.com/tags/power-query/">power query</a></span>
+        
+    </p>
+
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://mirianbr.com/categories/tutorials/">Tutorials</a></span>
+        
+    </p>
+
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>
