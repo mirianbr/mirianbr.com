@@ -4,17 +4,13 @@ description = "My first Ludum Dare game jam participation, with my first interac
 type = "post"
 tags = [
     "ludum-dare",
-    "game-jam",
+    "game-dev",
     "interactive-fiction",
+    "writing",
     "twine",
     "sugarcube"
 ]
 date = "2021-10-05"
-categories = [
-    "Interactive Fiction",
-    "Writing",
-    "Game Development"
-]
 [ author ]
   name = "Mírian Bruckschen Motta Barros"
 +++

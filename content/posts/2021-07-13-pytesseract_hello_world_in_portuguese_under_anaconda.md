@@ -3,19 +3,17 @@ title = "A pytesseract hello world in Portuguese under Anaconda"
 description = "Complementary tutorial for a hello world in OCR in Portuguese using (py)tesseract under Anaconda, with language-specific 'Failed loading language' error resolution"
 type = "post"
 tags = [
-    "brazilian portuguese",
+    "brazilian-portuguese",
     "pdf",
     "ocr",
     "tesseract",
     "pytesseract",
-    "anaconda"
+    "python",
+    "data-scrapping",
+    "anaconda",
+    "tutorials"
 ]
 date = "2021-07-13"
-categories = [
-    "OCR",
-    "Data Scrapping",
-    "Tutorials"
-]
 [ author ]
   name = "Mírian Bruckschen Motta Barros"
 +++

@@ -28,9 +28,7 @@ paginate = 10
   images = [""]
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+    tag = "tags"
 
 [params.footer]
     trademark = true

@@ -4,16 +4,14 @@ description = "Exploring sheets possibilities for pulling Central Bank of Brazil
 type = "post"
 tags = [
     "finance",
-    "brazilian taxes",
-    "exchange rates",
-    "google sheets",
-    "microsoft excel",
-    "power query"
+    "brazilian-taxes",
+    "exchange-rates",
+    "google-sheets",
+    "microsoft-excel",
+    "power-query",
+    "tutorials"
 ]
 date = "2021-07-09"
-categories = [
-    "Tutorials"
-]
 [ author ]
   name = "Mírian Bruckschen Motta Barros"
 +++

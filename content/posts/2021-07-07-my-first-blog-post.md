@@ -5,13 +5,11 @@ type = "post"
 tags = [
     "jekyll",
     "blog",
-    "github-pages"
+    "github-pages",
+    "ssg",
+    "web-dev"
 ]
 date = "2021-07-07"
-categories = [
-    "Static Site Generators",
-    "Development",
-]
 [ author ]
   name = "Mírian Bruckschen Motta Barros"
 +++
