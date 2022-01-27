@@ -1,0 +1,1 @@
+Esta é a lista de meus blog posts em português.  Você pode também ter interesse em [meus posts em inglês](../../posts).

@@ -13,6 +13,8 @@ paginate = 10
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
+  title = "Mírian Bruckschen Motta Barros"
+  
   # Subtitle for home
   homeSubtitle = "Consulting services on technical documentation, customer service and supporting business processes.  Contact me at hello@mirianbr.com 👋🏼"
 
@@ -24,8 +26,11 @@ paginate = 10
 
   # Metadata mostly used in document's head
   description = "Mírian Bruckschen Motta Barros's Website"
-  keywords = "homepage, blog, technical writing, technical documentation, it consulting, technical writing consulting"
+  keywords = "technical writing, technical documentation, it consulting, technical writing consulting"
   images = [""]
+
+  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
 
 [taxonomies]
     tag = "tags"
@@ -56,32 +61,70 @@ paginate = 10
   name = "itchio"
   url = "https://mirianbr.itch.io/"
 
+defaultContentLang = 'en'
 [languages]
   [languages.en]
-    title = "Mírian Bruckschen Motta Barros's Website"
     subtitle = "Technical Documentation and Customer Services Consultant"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
       logoText = "homepage"
       logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-  [[menu.main]]
-    identifier = "projects"
-    name       = "Projects"
-    url        = "/projects"
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name       = "About"
+        url        = "/about"
+        weight     = 1
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name       = "Blog"
+        url        = "/posts"
+        weight     = 2
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name       = "Projects"
+        url        = "/projects"
+        weight     = 3
+      [[languages.en.menu.main]]
+        identifier = "ptbr"
+        name       = "🇧🇷"
+        url        = "/pt"
+        weight     = 4
+      
+  
+  [languages.pt]
+    contentDir = "content/pt"
+    
+    subtitle = "Consultoria em Documentação Técnica e Atendimento ao Cliente"
+    homeSubtitle = "Consultoria em documentação técnica, atendimento ao cliente e processos de negócio de apoio. Contato: hello@mirianbr.com 👋🏼"
+
+    keywords = "consultoria em ti, documentação técnica, escrita técnica"
+    readOtherPosts = "Leia mais"
+
+    [languages.pt.params.logo]
+      logoText = "início"
+      logoHomeLink = "/pt"
+
+    [languages.pt.menu]
+      [[languages.pt.menu.main]]
+        identifier = "about-pt"
+        name       = "Sobre"
+        url        = "/pt/sobre"
+        weight     = 1
+      [[languages.pt.menu.main]]
+        identifier = "blog-pt"
+        name       = "Blog"
+        url        = "/pt/posts"
+        weight     = 2
+      [[languages.pt.menu.main]]
+        identifier = "projects-pt"
+        name       = "Projetos"
+        url        = "/pt/projetos"
+        weight     = 3
+      [[languages.pt.menu.main]]
+        identifier = "english"
+        name       = "🇺🇸"
+        url        = "../"
+        weight     = 4
