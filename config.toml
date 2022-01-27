@@ -1,6 +1,6 @@
 baseURL = "https://mirianbr.com"
 languageCode = "en-us"
-title = "Mírian Bruckschen Motta Barros's Website"
+title = "Mírian Bruckschen Motta Barros"
 theme = "hello-friend-ng"
 paginate = 10
 
@@ -13,8 +13,6 @@ paginate = 10
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
 
-  title = "Mírian Bruckschen Motta Barros"
-  
   # Subtitle for home
   homeSubtitle = "Consulting services on technical documentation, customer service and supporting business processes.  Contact me at hello@mirianbr.com 👋🏼"
 
