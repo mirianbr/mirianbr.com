@@ -25,7 +25,7 @@ paginate = 10
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "Mírian Bruckschen Motta Barros's Website"
+  description = "Mírian Bruckschen Motta Barros"
   keywords = "technical writing, technical documentation, it consulting, technical writing consulting"
   images = [""]
 
