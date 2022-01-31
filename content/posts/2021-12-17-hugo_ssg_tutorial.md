@@ -13,6 +13,8 @@ date = "2021-12-17"
   name = "Mírian Bruckschen Motta Barros"
 +++
 
+You can also read this post in [Portuguese](../../pt/posts/2022-01-27-hugo_ssg_tutorial-ptbr).
+
 I have been asked these days about [Static Site Generators](https://jamstack.org/generators/) (SSGs), and at the moment I had to confess I had very little practical experience with those.  I *did* put my [previous blog](https://github.com/mirianbr/old-mirianbr.github.io) online using [Jekyll](https://jekyllrb.com/) with [Github Pages](https://pages.github.com/)' straightforward integration, and updated it always online, directly at Github UI, but it's something else to create everything locally and have full control on my hosting (something I do now, here at [mirianbr.com](https://mirianbr.com)).
 
 So, this time I decided to try out Hugo after checking [so](https://jekyllrb.com/) [many](https://gohugo.io/) [interesting](https://www.gatsbyjs.com/) [options](https://vuepress.vuejs.org/) [available](https://blog.getpelican.com/).  It turned out to be easier than I imagined to have something simple yet very beautiful.
